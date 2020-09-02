@@ -16,31 +16,31 @@ def sbtrctDts(dt1 : datetime.datetime, dt2: datetime.datetime) -> float:
 
     #returns year difference
     if int(int(str(diff.days)) / 365) > 1:
-        return f'{int(int(str(diff.days)) / 365)} yrs ago'
+        return f'{int(int(str(diff.days)) / 365)} years ago'
 
     #returns year when it is exactly one
     elif int(str(diff.days)) == 365:
-        return f'{int(int(str(diff.days)) / 365)} yr ago'
+        return f'{int(int(str(diff.days)) / 365)} year ago'
 
     # returns month difference
     elif int(int(str(diff.days)) / 28) > 1:
-        return f'{int(int(str(diff.days)) / 28)} mnths ago'
+        return f'{int(int(str(diff.days)) / 28)} months ago'
 
     # returns month difference if it is exactly one
     elif int(int(str(diff.days)) / 28) == 1:
-        return f'{int(int(str(diff.days)) / 28)} mnth ago'
+        return f'{int(int(str(diff.days)) / 28)} month ago'
 
     # returns days difference
     elif int(str(diff.days)) > 0 and not(int(str(diff.days)) == 1):
-        return f'{int(str(diff.days))} dys ago'
+        return f'{int(str(diff.days))} days ago'
 
     # returns days difference when the difference is exactly one
     elif int(str(diff.days)) == 1:
-        return f'{int(str(diff.days))} dy ago'
+        return f'{int(str(diff.days))} day ago'
 
     # returns hour difference
     elif int(str(diff.seconds)) >= 3600:
-        return f'{int(int(str(diff.seconds)) / 3600)} hrs ago'
+        return f'{int(int(str(diff.seconds)) / 3600)} hours ago'
 
     # returns minute difference
     elif int(str(diff.seconds)) >= 60:
